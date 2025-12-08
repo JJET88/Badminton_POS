@@ -12,7 +12,8 @@ const handler = NextAuth({
       async authorize(credentials) {
         // Add your authentication logic here
         // Example: check against your database
-        const res = await fetch(`${process.env.NEXTAUTH_URL}/api/login`, {
+        const res = await fetch(`/api/login`, {
+
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
