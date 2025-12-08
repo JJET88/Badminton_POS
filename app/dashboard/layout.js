@@ -39,7 +39,7 @@ export default function DashboardLayout({ children }) {
   }, [user, router]);
 
   const menu = [
-    { name: "Home", path: "/", icon: FiHome },
+    { name: "Home", path: "/", icon: FiExternalLink },
     { name: "Dashboard", path: "/dashboard", icon: FiHome },
     { name: "Products", path: "/dashboard/products", icon: FiPackage },
     { name: "View Sales", path: "/dashboard/sales", icon: FiShoppingCart },
