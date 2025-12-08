@@ -39,6 +39,7 @@ export default function DashboardLayout({ children }) {
   }, [user, router]);
 
   const menu = [
+    { name: "Home", path: "/", icon: FiHome },
     { name: "Dashboard", path: "/dashboard", icon: FiHome },
     { name: "Products", path: "/dashboard/products", icon: FiPackage },
     { name: "View Sales", path: "/dashboard/sales", icon: FiShoppingCart },
@@ -100,7 +101,7 @@ export default function DashboardLayout({ children }) {
         </div>
 
         {/* Go to Home Button */}
-        <div className={`p-3 border-b border-gray-200 ${collapsed ? "lg:px-2" : ""}`}>
+        {/* <div className={`p-3 border-b border-gray-200 ${collapsed ? "lg:px-2" : ""}`}>
           <Link
             href="/products"
             onClick={() => setMobileMenuOpen(false)}
@@ -117,7 +118,7 @@ export default function DashboardLayout({ children }) {
               Go to Store
             </span>
           </Link>
-        </div>
+        </div> */}
 
         {/* Navigation Menu */}
         <nav className="flex-1 flex flex-col space-y-1 p-3 overflow-y-auto">
