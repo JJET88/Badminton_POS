@@ -7,7 +7,7 @@ import useCartStore from "@/app/store/useCartStore";
 import useAuthStore from "@/app/store/useAuthStore";
 import { CgProfile } from "react-icons/cg";
 import { PiShoppingCart } from "react-icons/pi";
-import { FiLogOut, FiUser, FiSettings } from "react-icons/fi";
+import { FiLogOut, FiUser, FiSettings, FiShoppingBag } from "react-icons/fi";
 
 export default function CartHeader({ search, setSearch }) {
   const { carts } = useCartStore();
